@@ -14,9 +14,9 @@ export class AppController {
 
   @GrpcMethod('AppController', 'ShoutOut')
   shoutOut(
-    messageInput: any
+    messageInput
   ): IString {
-    this.logger.log('shoutOut' + messageInput.msg)
+    this.logger.log('shoutOut' + messageInput.message)
     return {
       message: this.appService.shoutOut(messageInput)
     }

@@ -7,9 +7,9 @@ service AppController {
 }
 
 message TextInput {
-    string txtInput = 1;
+    string messageInput = 1;
 } 
 
 message TextOutput {
-    string txtOutput = 1;
+    string message = 1;
 }
